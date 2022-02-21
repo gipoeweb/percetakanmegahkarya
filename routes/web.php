@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('pages.home');
+})->name('megahkarya');
+
+Route::get('/product', function () {
+    return view('pages.product');
+})->name('product');
+
+Route::get('/profile', function () {
+    return view('pages.profile');
+})->name('profile');
