@@ -10,7 +10,7 @@
                 <div class="col breadcrumb-custom ms-4 mt-4 mb-3">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('megahkarya') }}">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Profil</li>
                         </ol>
                     </nav>
@@ -49,12 +49,12 @@
                             dibawah ini atau kunjungi workshop kami.</p>
 
                         <a class="btn btn-wa" href="#" data-aos="zoom-in">
-                            <img src="frontend/images/ic_whatsapp.png" style="height: 40px;" alt="">
+                            <img src="{{ asset('frontend/images/ic_whatsapp.png')}}" style="height: 40px;" alt="">
                             <span class="ms-3"><strong>0822 3134 4325</strong></span>
                         </a>
                         <br>
                         <a class="btn btn-wa" href="#" data-aos="zoom-in">
-                            <img src="frontend/images/ic_phone.png" style="height: 40px;" alt="">
+                            <img src="{{ asset('frontend/images/ic_phone.png')}}" style="height: 40px;" alt="">
                             <span class="ms-3"><strong>0822 3134 4325</strong></span>
                         </a>
                         <p class="animate__animated animate__fadeIn animate__infinite mt-3"><strong>(Klik Langsung Nomor
@@ -79,12 +79,12 @@
                         <div class="info-cs" data-aos="zoom-in">
                             <h4 class="text-start">Customer Support Kami :</h4>
                             <a class="btn btn-wa" href="#">
-                                <img src="frontend/images/ic_whatsapp.png" style="height: 40px;" alt="">
+                                <img src="{{ asset('frontend/images/ic_whatsapp.png')}}" style="height: 40px;" alt="">
                                 <span class="ms-3"><strong>0822 3134 4325</strong></span>
                             </a>
                             <br>
                             <a class="btn btn-wa" href="#">
-                                <img src="frontend/images/ic_phone.png" style="height: 40px;" alt="">
+                                <img src="{{ asset('frontend/images/ic_phone.png')}}" style="height: 40px;" alt="">
                                 <span class="ms-3"><strong>0822 3134 4325</strong></span>
                             </a>
 

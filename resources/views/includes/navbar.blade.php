@@ -2,7 +2,7 @@
     <div class="container d-none d-lg-block">
         <nav class="navbar navbar-dekstop navbar-expand-lg navbar-dark navbar-light p-0">
             <div class="container-fluid">
-                <a class="navbar-brand ms-3" href="#">Megah Karya</a>
+                <a class="navbar-brand ms-3" href="{{ route('megahkarya') }}">Megah Karya</a>
                 <button class="navbar-toggler navbar-dark me-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">

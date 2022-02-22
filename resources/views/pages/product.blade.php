@@ -12,7 +12,7 @@
                     <div class="col breadcrumb-custom ms-4 mt-5 mb-3">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{ route('megahkarya') }}">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Map Ijazah</li>
                             </ol>
                         </nav>
@@ -28,19 +28,19 @@
                                     <div class="col px-4" data-aos="zoom-in">
                                         <div class="owl-carousel owl-theme">
                                             <div class="item">
-                                                <img src="frontend/images/map.jpg"
+                                                <img src="{{ asset('frontend/images/map.jpg') }}"
                                                     class="card-img-top text-center" " alt=" ...">
                                             </div>
                                             <div class="item">
-                                                <img src="frontend/images/map.jpg"
+                                                <img src="{{ asset('frontend/images/map.jpg') }}"
                                                     class="card-img-top text-center" " alt=" ...">
                                             </div>
                                             <div class="item">
-                                                <img src="frontend/images/map.jpg"
+                                                <img src="{{ asset('frontend/images/map.jpg') }}"
                                                     class="card-img-top text-center" " alt=" ...">
                                             </div>
                                             <div class="item">
-                                                <img src="frontend/images/map.jpg"
+                                                <img src="{{ asset('frontend/images/map.jpg') }}"
                                                     class="card-img-top text-center" " alt=" ...">
                                             </div>
                                         </div>
@@ -249,7 +249,7 @@
                                     <li>Hubungi Customer Support Kami
                                         <ul>
                                             <li>Anda bisa datang ke alamat workshop kami sesuai yang tersedia di halaman
-                                                <span> <a href="profil.html"
+                                                <span> <a href="{{ route('profile') }}"
                                                         class="text-decoration-none">Profil</a></span> </li>
                                             <li>Atau hubungi melalui WA <span> <a href="#"
                                                         class="text-decoration-none">0822 3134 4325</a></span> atau
