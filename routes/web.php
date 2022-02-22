@@ -24,3 +24,9 @@ Route::get('/product', function () {
 Route::get('/profile', function () {
     return view('pages.profile');
 })->name('profile');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';

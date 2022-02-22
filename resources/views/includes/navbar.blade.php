@@ -40,7 +40,7 @@
                             <a class="nav-link" href="{{ route('profile') }}">Profil</a>
                         </li>
                     </ul>
-                    <form>
+                    <form action="{{ route('login') }}">
                         <button class="btn btn-login rounded px-4 me-3" type="submit">Login</button>
                     </form>
                 </div>
