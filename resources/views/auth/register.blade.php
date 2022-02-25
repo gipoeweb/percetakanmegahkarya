@@ -45,6 +45,15 @@
                                 name="password_confirmation" required />
             </div>
 
+            <!-- Sign in with Google -->
+            <div class="mt-4 text-center border-gray-400 border rounded">
+                <a href="#" class="block flex text-indigo-600 text-xl shadow py-4 justify-center">
+                    <img src="{{ asset('frontend/images/ic_google.png') }}" style="width: 24px; height:24px;">
+                    <span>&nbsp;&nbsp;Sign in with Google</span>
+                </a>
+            </div>
+
+
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
                     {{ __('Already registered?') }}
