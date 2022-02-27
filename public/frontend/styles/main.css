@@ -10,8 +10,12 @@ body p {
 }
 
 .navbar-dekstop {
-  height: 60px;
+  height: 70px;
   z-index: 1000;
+}
+
+.navbar-mobile {
+  background-color: #424b54;
 }
 
 .navbar-bottom .navbar-nav .nav-link img {
@@ -51,6 +55,19 @@ body p {
 .navbar-light .btn-login:hover {
   background-color: #fb512a;
   color: #ffffff;
+}
+
+.user-logged a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.user-logged a .user-photo {
+  width: 50px;
+}
+
+.user-logged .user-nav {
+  color: #000c2f;
 }
 
 header .dekstop-header {

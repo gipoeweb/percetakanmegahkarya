@@ -47,7 +47,7 @@
 
             <!-- Sign in with Google -->
             <div class="mt-4 text-center border-gray-400 border rounded">
-                <a href="#" class="block flex text-indigo-600 text-xl shadow py-4 justify-center">
+                <a href="{{ route('user.login.google') }}" class="block flex text-indigo-600 text-xl shadow py-4 justify-center">
                     <img src="{{ asset('frontend/images/ic_google.png') }}" style="width: 24px; height:24px;">
                     <span>&nbsp;&nbsp;Sign in with Google</span>
                 </a>

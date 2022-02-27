@@ -26,7 +26,8 @@ class User extends Authenticatable
         'company_address',
         'address',
         'no_hp',
-        'is_admin'
+        'is_admin',
+        'email_verified_at'
     ];
 
     /**

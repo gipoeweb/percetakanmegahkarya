@@ -11,8 +11,12 @@ body {
 
 // Navbar CSS
 .navbar-dekstop {
-    height: 60px;
+    height: 70px;
     z-index: 1000;
+}
+
+.navbar-mobile {
+    background-color: #424b54;
 }
 
 .navbar-bottom {
@@ -73,6 +77,21 @@ body {
     }
 }
 
+.user-logged {
+    a {
+        color: #ffffff;
+        text-decoration: none;
+
+        .user-photo {
+            width: 50px;
+        }
+
+    }
+
+    .user-nav {
+        color: #000c2f;
+    }
+}
 
 
 // Header

@@ -40,10 +40,71 @@
                             <a class="nav-link" href="{{ route('profile') }}">Profil</a>
                         </li>
                     </ul>
-                    <form action="{{ route('login') }}">
-                        <button class="btn btn-login rounded px-4 me-3" type="submit">Login</button>
-                    </form>
+
+                    @auth
+                        <div class="d-flex user-logged nav-item dropdown no-arrow">
+                            <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Halo, {{ Auth::user()->name }}
+                                <img src="{{ Auth::user()->avatar }}" class="user-photo" alt="">
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    @if (Auth::user()->is_admin)
+                                        <li><a class="dropdown-item user-nav" href="#">My Dashboard</a></li>
+                                    @endif
+                                    <li><a class="dropdown-item user-nav" href="#">My Profile</a></li>
+                                    <li>
+                                        <a class="dropdown-item user-nav" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Sign Out</a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="post" style="display: none">
+                                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                        </form>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                        @else
+                        <div class="d-flex">
+                            <a href="{{ route('login') }}" class="btn btn-secondary rounded px-4 me-3">Sign In</a>
+                            <a href="{{ route('register') }}" class="btn btn-login rounded px-4 me-3">Sign Up</a>
+                        </div>
+                        {{-- <form action="{{ route('login') }}">
+                            <button class="btn btn-login rounded px-4 me-3" type="submit">Login</button>
+                        </form> --}}
+                    @endauth
                 </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="d-xs-block d-lg-none">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                @auth
+                    <div class="d-flex user-logged nav-item dropdown no-arrow ms-auto">
+                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Halo, {{ Auth::user()->name }}
+                            <img src="{{ Auth::user()->avatar }}" class="user-photo" alt="">
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                @if (Auth::user()->is_admin)
+                                    <li><a class="dropdown-item user-nav" href="#">My Dashboard</a></li>
+                                @endif
+                                <li><a class="dropdown-item user-nav" href="#">My Profile</a></li>
+                                <li>
+                                    <a class="dropdown-item user-nav" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Sign Out</a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="post" style="display: none">
+                                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                    </form>
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                    @else
+                    <div class="d-flex ms-auto">
+                        <a href="{{ route('login') }}" class="btn btn-secondary rounded px-4 me-3">Sign In</a>
+                        <a href="{{ route('register') }}" class="btn btn-login rounded px-4 me-3">Sign Up</a>
+                    </div>
+                    {{-- <form action="{{ route('login') }}">
+                        <button class="btn btn-login rounded px-4 me-3" type="submit">Login</button>
+                    </form> --}}
+                @endauth
             </div>
         </nav>
     </div>
