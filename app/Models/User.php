@@ -23,7 +23,7 @@ class User extends Authenticatable
         'email',
         'password',
         'avatar',
-        'company_address',
+        'company_name',
         'address',
         'no_hp',
         'is_admin',

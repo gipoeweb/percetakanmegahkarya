@@ -50,7 +50,7 @@
                                     @if (Auth::user()->is_admin)
                                         <li><a class="dropdown-item user-nav" href="#">My Dashboard</a></li>
                                     @endif
-                                    <li><a class="dropdown-item user-nav" href="#">My Profile</a></li>
+                                    <li><a class="dropdown-item user-nav" href="{{ route('user-profile.index') }}">My Profile</a></li>
                                     <li>
                                         <a class="dropdown-item user-nav" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Sign Out</a>
                                         <form id="logout-form" action="{{ route('logout') }}" method="post" style="display: none">
