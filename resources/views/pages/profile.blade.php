@@ -62,7 +62,7 @@
 
                         <div class="info-map-heading mt-3" data-aos="zoom-in">
                             <h3>Lokasi UD. MEGAH KARYA </h3>
-                            <p>Perum Griyo Sidomulyo Indah, Jl. Kidemang Simomenggolo No.1,
+                            <p>Perum Griyo Sidomulyo Indah, Jl. Kidemang Simomenggolo Blok C No.1,
                                 <br> Sidomulyo, Kec. Buduran, Sidoarjo 61252</p>
                         </div>
                         <div class="ratio ratio-16x9 shadow-lg" data-aos="zoom-in">
@@ -111,15 +111,15 @@
                                 <div class="row">
                                     <div class="col">
                                         <h5>1. &nbsp; Rekening BCA</h5>
-                                        <h5>&emsp;&emsp; A.N &nbsp; UD. Megah Karya</h5>
-                                        <h5>&emsp;&emsp; A.C &nbsp;1234 5678 90</h5>
+                                        <h5>&emsp;&emsp; A.N &nbsp; Sendy Yuarin</h5>
+                                        <h5>&emsp;&emsp; A.C &nbsp;064 051 9410</h5>
                                     </div>
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col">
                                         <h5>2. &nbsp; Rekening Mandiri</h5>
-                                        <h5>&emsp;&emsp; A.N &nbsp; UD. Megah Karya</h5>
-                                        <h5>&emsp;&emsp; A.C &nbsp;1234 5678 90</h5>
+                                        <h5>&emsp;&emsp; A.N &nbsp; Sendy Yuarin</h5>
+                                        <h5>&emsp;&emsp; A.C &nbsp;14100 2218 7090</h5>
                                     </div>
                                 </div>
                             </div>
